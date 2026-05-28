@@ -5,97 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaprila Doces</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <img src="./imagens/kaprila-doces-logo.png" alt="Logo Kaprila Doces">
+        <img src="./imagens/logo-kaprila-doces.png" alt="Logo Kaprila Doces">
     </header>
     <main>
         <h1>Proporção de receitas</h1>
-        <div id="container">
-            <section id="informacao">
+        <section id="container">
+            <article id="receita-original">
                 <h2>Receita original</h2>
 
-                <label for="qtd-de-receitas">Quantidade que rende:</label>
-                <input type="number" id="qtd-de-receitas" required>
-                <label for="qtd-de-receitas-futuras">Quantidade de receitas que quer caclcular:</label>
-                <input type="text" id="qtd-de-receitas-futuras" required>
+                <label for="qtd-de-receitas">Quantidade de receitas:</label>
+                <input type="number" id="qtd-de-receitas" required placeholder="1">
+                <label for="qtd-de-receitas-futuras">Quantidade de receitas a obter:</label>
+                <input type="number" id="qtd-de-receitas-futuras" required placeholder="0.5">
         
                 <div class="produto-quantidade">
                     <div class="ingrediente">
                         <label for="ingrediente1">Ingrediente:</label>
-                        <input type="text" id="ingrediente1" required>
+                        <input type="text" id="ingrediente1" required placeholder="Farinha de trigo">
                     </div>
                     <div class="peso">
                         <label for="peso1">Peso(g):</label>
-                        <input type="number" id="peso1" required>
+                        <input type="number" id="peso1" required placeholder="500">
                     </div>
                 </div>
                 <div class="produto-quantidade">
-                    <label for="ingrediente2">Ingrediente:</label>
-                    <input type="text" id="ingrediente2">
-                    <label for="peso2">Peso(g):</label>
-                    <input type="number" id="peso2">
+                    <div class="ingrediente">
+                        <label for="ingrediente2">Ingrediente:</label>
+                        <input type="text" id="ingrediente2">
+                    </div>
+                    <div class="peso">
+                        <label for="peso2">Peso(g):</label>
+                        <input type="number" id="peso2">
+                    </div>
                 </div>
                 <div class="produto-quantidade">
-                    <label for="ingrediente3">Ingrediente:</label>
-                    <input type="text" id="ingrediente3">
-                    <label for="peso3">Peso(g):</label>
-                    <input type="number" id="peso3">
+                    <div class="ingrediente">
+                        <label for="ingrediente3">Ingrediente:</label>
+                        <input type="text" id="ingrediente3">
+                    </div>
+                    <div class="peso">
+                        <label for="peso3">Peso(g):</label>
+                        <input type="number" id="peso3">
+                    </div>
                 </div>
                 <div class="produto-quantidade">
-                    <label for="ingrediente4">Ingrediente:</label>
-                    <input type="text" id="ingrediente4">
-                    <label for="peso4">Peso(g):</label>
-                    <input type="number" id="peso4">
+                    <div class="ingrediente">
+                        <label for="ingrediente4">Ingrediente:</label>
+                        <input type="text" id="ingrediente4">
+                    </div>
+                    <div class="peso">
+                        <label for="peso4">Peso(g):</label>
+                        <input type="number" id="peso4">
+                    </div>
                 </div>
                 <div class="produto-quantidade">
-                    <label for="ingrediente5">Ingrediente:</label>
-                    <input type="text" id="ingrediente5">
-                    <label for="peso5">Peso(g):</label>
-                    <input type="number" id="peso5">
+                    <div class="ingrediente">
+                        <label for="ingrediente5">Ingrediente:</label>
+                        <input type="text" id="ingrediente5">
+                    </div>
+                    <div class="peso">
+                        <label for="peso5">Peso(g):</label>
+                        <input type="number" id="peso5">
+                    </div>
                 </div>
                 <div class="produto-quantidade">
-                    <label for="ingrediente6">Ingrediente:</label>
-                    <input type="text" id="ingrediente6">
-                    <label for="peso6">Peso(g):</label>
-                    <input type="number" id="peso6">
+                    <div class="ingrediente">
+                        <label for="ingrediente6">Ingrediente:</label>
+                        <input type="text" id="ingrediente6">
+                    </div>
+                    <div class="peso">
+                        <label for="peso6">Peso(g):</label>
+                        <input type="number" id="peso6">
+                    </div>
                 </div>
                 <button id="calcular">Calcular</button>
-            </section>
-            <section id="resultados">
-                <h2>Resultados</h2>
+            </article>
+            <article id="nova-receita">
+                <h2>Nova receita</h2>
+                <p id="redimento-nova-receita">Sua nova receita rende:</p>
                 <div>
-                    <p>Ingrediente:</p>
-                    <p>--</p>
+                    <p id="novo-ingrediente1">Ingrediente:</p>
+                    <p id="novo-peso1">Peso:</p>
                 </div>
                 <div>
-                    <p>Ingrediente:</p>
-                    <p>--</p>
+                    <p id="novo-ingrediente2">Ingrediente:</p>
+                    <p id="novo-peso2">Peso:</p>
                 </div>
                 <div>
-                    <p>Ingrediente:</p>
-                    <p>--</p>
+                    <p id="novo-ingrediente3">Ingrediente:</p>
+                    <p id="novo-peso3">Peso:</p>
                 </div>
                 <div>
-                    <p>Ingrediente:</p>
-                    <p>--</p>
+                    <p id="novo-ingrediente4">Ingrediente:</p>
+                    <p id="novo-peso4">Peso:</p>
                 </div>
                 <div>
-                    <p>Ingrediente:</p>
-                    <p>--</p>
+                    <p id="novo-ingrediente5">Ingrediente:</p>
+                    <p id="novo-peso5">Peso:</p>
                 </div>
                 <div>
-                    <p>Ingrediente:</p>
-                    <p>--</p>
+                    <p id="novo-ingrediente6">Ingrediente:</p>
+                    <p id="novo-peso6">Peso:</p>
                 </div>
-            </section>
-        </div>
+            </article>
+        </section>
     </main>
     <footer>
         <p>Desenvolvido por <a href="https://github.com/kauanyfarias" target="_blank">Kauany Farias.</a></p>
     </footer>
-
-
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
 }
 
 body{
-    height: 100vh;
+    background-color: #363636;
     background-image: url(./imagens/background-marmorizado.png);
     background-size: cover;
     color: #f1f1f1;
@@ -41,44 +41,47 @@ h1{
     margin-bottom: 36px;
 }
 
-
-/* .container{
+/* ENGLOBA O RECEITA ORIGINAL E OS RESULTADOS */
+section#container{
     display: flex;
-    flex-direction: row wrap;
-    flex: 1 1 800px
-} */
-
-#container{
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
     gap: 24px;
 }
 
-section{
+article{
     background-color: #363636;
     border-radius: 12px;
-    padding: 12px 16px;
+    padding: 20px 16px;
+    flex: 1 1 340px;
 }
 
 /* DADOS INSERIDOS PELO CLIENTE (Receita original) */
-section#informacao{
+article#receita-original{
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-#informacao div.produto-quantidade{
+div.produto-quantidade{
     display: flex;
-    flex-flow: row wrap;
     gap: 12px;
-    justify-content: space-between;
+    flex: 1;
 }
 
 .ingrediente, .peso{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    gap: 12px;
+}
+
+/* CRESCE 3X MAIS DO QUE O PESO */
+.ingrediente{
+    flex: 3;
+}
+
+/* TRÊS VEZES MENOR DO QUE O INGREDIENTE  */
+.peso{
+    flex: 1;
 }
 
 label{
@@ -92,10 +95,20 @@ input{
     background-color: #363636;
     color: #f1f1f1;
     border: 1px solid #a1a1a1;
+    width: 100%;
 }
 
 input:focus{
-    box-shadow: 0 0 0 5px #e8a4b38f;
+    outline: none;
+    border: #E8A4B3;
+    box-shadow: 0 0 5px #E8A4B3;
+}
+
+/* TIRA AS SETINHAS DO NAVEGADOR */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 button{
@@ -103,10 +116,27 @@ button{
     border: 0px;
     border-radius: 8px;
     padding: 8px 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #f1f1f1;
     font-weight: bold;
 }
+
+/* RESULTADOS DA NOVA RECEITA */
+#nova-receita{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#nova-receita h2{
+    margin-bottom: 12px;
+}
+
+#nova-receita p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
 
 footer a{
     color: #f1f1f1;
